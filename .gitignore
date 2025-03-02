@@ -1,0 +1,68 @@
+# 프로젝트 관련
+HELP.md
+
+# 빌드/실행 결과물 제외
+/target/
+/bin/
+/out/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+/build/
+
+# Gradle 관련
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Maven 관련
+.mvnw
+.mvnw.cmd
+.m2/
+
+# IDE 설정 파일 제외 (IntelliJ, Eclipse, NetBeans, VS Code)
+.idea/
+*.iws
+*.iml
+*.ipr
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans/
+.sts4-cache/
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+/.vscode/
+
+# OS 관련 파일 제외
+.DS_Store
+Thumbs.db
+
+# 실행 파일 및 로그 제외
+*.class
+*.log
+*.war
+*.jar
+*.bat
+*.sh
+
+# 환경 변수, 설정 파일 (보안 중요)
+/.env
+/.env.local
+/application.properties
+/application.yml
+/application-*.properties
+/application-*.yml
+
+# Docker 관련 (파일명 오타 수정)
+/dockerfile.*
